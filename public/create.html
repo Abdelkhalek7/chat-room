@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <link rel="icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="centered-form">
+            <div class="centered-form__box">
+                <h1>create room</h1>
+                <form  id="create-btn-form">
+                    <label>Display name</label>
+                    <input type="text" name="username" placeholder="Display name" id="cusername" required>
+                    <label>Room</label>
+                    <input type="text" name="room" placeholder="Room" id="croom" required>
+                    <label>password</label>
+                    <input type="text" name="password" placeholder="Password" id="cpassword" required>
+                   
+                    <button>create</button>
+                </form>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/create.js"></script>
+    </body>
+</html>
