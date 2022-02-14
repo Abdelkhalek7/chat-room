@@ -144,7 +144,7 @@ $messages.scrollTop = $messages.scrollHeight
  }
 socket.emit('join', {username,room}, (error) => {
     if(error=="1") {
-        $messageFormdelebtn.style.display = "none"
+        $messageFormdelebtn.style.display = "block"
        
     }
     else if(error) {
