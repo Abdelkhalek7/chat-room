@@ -25,6 +25,8 @@ io.on('connection',(socket) => {
    socket.on('roomdeleted',async (room) => {
 
     await Room.deleteOne({name:room})
+    //await User.deleteMany({room:room})
+
     socket.broadcast.to(room).emit('deleted')
       })
    socket.on('chekjoin',async (username,roomname,password, callback) => {
